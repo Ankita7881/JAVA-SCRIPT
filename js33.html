@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            
+            margin: 2px;
+            float: left;
+        }
+    </style>
+    <script>
+        var color=["plum","aqua","lightgreen","blue","aquamarine"];
+        var x=0;
+        var y=1;
+        function showBox(){
+            for(var a=1;a<=100;a++){
+                mybox.innerHTML +="<div id='box' style='background-color:"+color[x]+";'>"+y+"</div>";
+                x++;
+                if(x==color.length){
+                    x=0;
+                }
+                if(y<=99){
+                    y++;
+                    setTimeout(showBox,100);
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="showBox()">
+       <div id="mybox"></div>
+</body>
+</html>

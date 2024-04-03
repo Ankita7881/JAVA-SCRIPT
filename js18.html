@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           function demo1(){
+            alert("Success");
+           }
+           function demo2(){
+            console.log("Focus");
+           }
+           function demo3(){
+            console.log("Blur");
+           }
+           function demo4(){
+            console.log("Mouse enter")
+           }
+           function demo5(){
+            console.log("Mouse leave")
+           }
+           function demo6(){
+            console.log("key down")
+           }
+           function demo7(){
+            console.log("key up")
+           }
+           function demo8(){
+            console.log("key press")
+           }
+           function demo9(){
+            console.log("Changed")
+           }
+    </script>
+</head>
+<body>
+    <button onclick="demo1()">Save</button>
+    <br><br>
+   <input type="text" onfocus="demo2()" onblur="demo3()" onmouseenter="demo4()" onmouseleave="demo5()">
+   <br><br>
+<input type="text" onkeydown="demo6()" onkeyup="demo7()" onkeypress="demo8()" >
+<br><br>
+   <select onchange="demo9()">
+    <option value="">Select</option>
+    <option value="">one</option>
+    <option value="">two</option>
+    <option value="">three</option>
+   </select>
+
+</body>
+</html>

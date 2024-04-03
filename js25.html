@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+#box{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px 10px;
+    background-color: aquamarine;
+}
+    </style>
+
+    <script>
+        function changebox(){
+            document.getElementById("box").style.backgroundColor="pink";
+            // document.getElementById("box").style.borderRadius="10px 50px";
+
+            box.style.borderRadius="150px 150px "
+        }
+    </script>
+
+</head>
+<body>
+    <div id="box" onclick="changebox()"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           function add(){
+            var a= document.getElementById("t1").value;
+            var b= document.getElementById("t2").value;
+
+            a = parseInt(a);
+            b = parseInt(b);
+
+            var add = a+b;
+            alert(add);
+           }
+    </script>
+
+<script>
+    function sub(){
+     var a= document.getElementById("t1").value;
+     var b= document.getElementById("t2").value;
+
+     a = parseInt(a);
+     b = parseInt(b);
+
+     var sub = a-b;
+     alert(sub);
+    }
+</script>
+
+<script>
+    function mul(){
+     var a= document.getElementById("t1").value;
+     var b= document.getElementById("t2").value;
+
+     a = parseInt(a);
+     b = parseInt(b);
+
+     var mul = a*b;
+     alert(mul);
+    }
+</script>
+
+<script>
+    function div(){
+     var a= document.getElementById("t1").value;
+     var b= document.getElementById("t2").value;
+
+     a = parseInt(a);
+     b = parseInt(b);
+
+     var div = a/b;
+     alert(div);
+    }
+</script>
+</head>
+<body>
+      Enter first number : <input type="number" id="t1"><br><br>
+      Enter second  number : <input type="number" id="t2"><br><br>
+
+      <button onclick="add ()"><big><b>+</b></big></button>
+      <button onclick="sub ()"><big><b>-</b></big></button>
+      <button onclick="mul ()"><big><b>*</b></big></button>
+      <button onclick="div ()"><big><b>/</b></big></button>
+</body>
+</html>
